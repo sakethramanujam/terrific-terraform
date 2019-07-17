@@ -2,7 +2,7 @@ steps:
   # build the container image
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/terrific-terraform/fibrun:latest', 
-         '--cache-from', 'gcr.io/terrific-terraform/fibrun:latest', './fibrun']
+         '--cache-from', 'gcr.io/terrific-terraform/fibrun:latest', '.']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1'
   # push the container image to Container Registry
