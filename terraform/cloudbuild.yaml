@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/terrific-terraform/terraform', '.']
+- name: 'gcr.io/terrific-terraform/terraform'
+  args: ['version']
+images: ['gcr.io/terrific-terraform/terraform']
+#tags: ['cloud-builders-community']

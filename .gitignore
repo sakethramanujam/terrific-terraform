@@ -1,0 +1,6 @@
+__pycache__/
+.vscode/
+.terraform
+*.backup
+*.json
+*.tfstate
